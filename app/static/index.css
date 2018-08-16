@@ -1,0 +1,113 @@
+#sidenavwrapper {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  left: 0;
+  top: 0;
+  background-color: #2b2b2b;
+}
+
+#sidenavuser, #sidenavcontent, #sidenavchannels, #sidenavdms {
+  height: auto;
+  width: 100%;
+  background-color: #2b2b2b;
+  left: 0;
+  top: 0;
+}
+
+#sidenavchannels, #sidenavdms {
+  padding-top: 25px;
+}
+
+#sidenavcontent a {
+  padding: 3px 50px 3px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+#sidenavcontent a:hover {
+  background-color: #565656;
+  color: #bababa;
+}
+
+#channels, #dms {
+  color: #d2d2d2;
+  padding: 0px 0px 0px 32px;
+  font-size: 18px;
+}
+
+#displayname {
+  font-size: 22px;
+  color: white;
+  padding: 18px 0px 7.5px 32px;
+}
+
+#username {
+  font-size: 16px;
+  color: #d2d2d2;
+  padding-left: 32px;
+}
+
+#sidenavcontent a:nth-of-type(1) {
+  margin-top: 8px;
+}
+
+#mainbar {
+  position: fixed;
+  width: 100%;
+  background-color: #bababa;
+  top: 0;
+  padding: 10px 0px 10px 60px;
+  font-size: 18px;
+}
+
+#mainmessages {
+  width: 100%;
+  max-height: 100%;
+  padding: 0px 0px 0px 60px;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+  margin-top: 42px;
+  margin-bottom: 49px;
+  bottom: 0;
+  position: absolute;
+}
+
+#maininput {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #bababa;
+  padding: 10px 0px 10px 60px;
+}
+
+#mainmessages p {
+  word-wrap: break-word;
+  padding-right: 700px;
+  overflow-y: scroll;
+  bottom: 0;
+}
+
+#mainwrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #d6d6d6;
+  float: left;
+  margin-left: 300px;
+  margin-right: -300px;
+  left: 0;
+  top: 0;
+}
+
+#dmsplus, #channelsplus {
+  font-size: 18px;
+  color: #d2d2d2;
+}
+
+#dmsplus:hover, #channelsplus:hover {
+  color: #ececec;
+}
