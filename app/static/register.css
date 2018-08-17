@@ -13,7 +13,7 @@ body {
   text-align: center;
 }
 
-#login {
+#register {
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -37,13 +37,13 @@ body {
   position: fixed;
 }
 
-#register {
+#login {
   margin-bottom: 0px;
   font-size: 14px;
   text-decoration: none;
   color: black;
 }
 
-#register:hover {
+#login:hover {
   color: #515151;
 }
