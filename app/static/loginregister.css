@@ -9,20 +9,20 @@ body {
   margin-top: 0px;
 }
 
-#loginwrapper {
+#contentwrapper {
   text-align: center;
 }
 
-#login {
+#content {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-#loginform div {
+#contentform div {
   padding: 4px 0px 4px 0px;
 }
 
-#loginform button {
+#contentform button {
   margin-bottom: 15px;
 }
 
@@ -32,18 +32,39 @@ body {
   top: 50%;
   left: 50%;
   vertical-align: center;
-  margin-top: -130px;
+  margin-top: -140px;
   margin-left: -250px;
   position: fixed;
+  padding: 10px 0px 10px 0px;
+  background-color: #ababab;
+  position: absolute;
 }
 
-#register {
+#link {
   margin-bottom: 0px;
   font-size: 14px;
   text-decoration: none;
   color: black;
 }
 
-#register:hover {
+#link:hover {
   color: #515151;
+}
+
+#message, #hiddenmessage {
+  position: relative;
+  bottom: 30%;
+  text-align: center;
+  background-color: #ababab;
+  margin-bottom: -65px;
+}
+
+#hiddenmessage {
+  visibility: hidden;
+}
+
+#messagecontent {
+  font-size: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }

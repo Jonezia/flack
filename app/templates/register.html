@@ -4,22 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>Flack</title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename="register.css") }}">
-  <script src="{{ url_for('static',filename="register.js") }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename="loginregister.css") }}">
+  <script src="{{ url_for('static',filename="login.js") }}"></script>
 </head>
 
 <body>
 
 <div id="wrapper">
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div id="message"><p id="messagecontent">
+      {% for message in messages %}
+        {{ message }}
+      {% endfor %}
+    </p></div>
+    {% else %}
+      <div id="hiddenmessage"><p id="messagecontent">Hidden</p></div>
+    {% endif %}
+  {% endwith %}
   <p id="title">Flack</p>
-  <div id="loginwrapper">
-    <p id="register">Register</p>
-    <form id="loginform" action="{{url_for('login')}}" method="POST">
+  <div id="contentwrapper">
+    <p id="content">Register</p>
+    <form id="contentform" action="{{url_for('login')}}" method="POST">
       <div><input type="text" name="username" placeholder="username"></div>
       <div><input type="password" name="password" placeholder="password"></div>
       <div><button>Register</button></div>
     </form>
-    <a id="login" href="{{ url_for('login') }}">Login</a>
+    <a id="link" href="{{ url_for('login') }}">Login</a>
   </div>
 </div>
 

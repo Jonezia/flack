@@ -62,6 +62,7 @@
   top: 0;
   padding: 10px 0px 10px 60px;
   font-size: 18px;
+  z-index: 2;
 }
 
 #mainmessages {
@@ -145,4 +146,8 @@
 
 #dmsplus:hover, #channelsplus:hover {
   color: #ececec;
+}
+
+#maininput input {
+  width: 60vw;
 }
