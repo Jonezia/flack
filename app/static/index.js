@@ -5,14 +5,20 @@ function changedisplayname() {
     changedisplayname();
   } else {
   localStorage.setItem("displayname",displayname);
-  document.getElementById("displayname").innerHTML = localStorage.getItem("displayname")
+  document.getElementById("displayname").innerHTML = localStorage.getItem("displayname");
   }
 }
 
+function togglesidenavuserdowntooltip() {
+  var tooltip = document.getElementById("sidenavuserdowntooltip")
+  if (tooltip.style.visiblity == "visible")
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  alert("Welcome back");
   if (localStorage.getItem("displayname") == null ||
   localStorage.getItem("displayname") == "") {
     changedisplayname();
+  } else {
+    document.getElementById("displayname").innerHTML = localStorage.getItem("displayname");
   }
 });

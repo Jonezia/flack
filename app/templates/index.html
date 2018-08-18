@@ -12,7 +12,16 @@
 
 <div id="sidenavwrapper">
   <div id="sidenavuser">
-    <div id="displayname">Display name</div>
+    <div id="displaynamewrapper">
+      <span id="displayname">Display name</span>
+      <span id="sidenavuserdown" onclick="togglesidenavuserdowntooltip()">
+      &#9662;
+        <span id="sidenavuserdowntooltip">
+          <div>Change display name</div>
+          <div>Logout</div>
+        </span>
+      </span>
+    </div>
     <div id="username">{{ username }}</div>
   </div>
   <div id="sidenavcontent">
