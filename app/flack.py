@@ -14,11 +14,9 @@ users = {"admin":"adminpass"}
 def index():
     if request.method == 'GET':
         if session.get('username') is None or session['username'] == "":
-            loggedin = False
             return redirect(url_for('login'))
         else:
-            loggedin = True
-            return render_template("index.html")
+            return render_template("index.html", username = session['username'])
     elif request.method == 'POST':
         if request.form['password'] == users[request.form['username']]:
             session['username'] = request.form['username']
